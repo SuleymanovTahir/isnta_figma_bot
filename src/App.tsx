@@ -13,6 +13,7 @@ import Clients from './pages/admin/Clients';
 import CreateUser from './pages/admin/CreateUser';
 import Users from './pages/admin/Users';
 import Calendar from './pages/admin/Calendar';
+import Settings from './pages/admin/Settings';
 
 // Manager Pages
 import ManagerLayout from './components/layouts/ManagerLayout';
@@ -20,6 +21,7 @@ import ManagerDashboard from './pages/manager/Dashboard';
 import Messages from './pages/manager/Messages';
 import Chat from './pages/manager/Chat';
 import Funnel from './pages/manager/Funnel';
+import ManagerSettings from './pages/manager/Settings';
 
 // Employee Pages
 import EmployeeLayout from './components/layouts/EmployeeLayout';
@@ -63,11 +65,15 @@ export default function App() {
             <Route path="bookings" element={<Bookings />} />
             <Route path="bookings/:id" element={<BookingDetail />} />
             <Route path="analytics" element={<Analytics />} />
+            <Route path="funnel" element={<Funnel />} />
             <Route path="services" element={<Services />} />
             <Route path="clients" element={<Clients />} />
+            <Route path="messages" element={<Messages />} />
+            <Route path="chat" element={<Chat />} />
             <Route path="users" element={<Users />} />
             <Route path="users/create" element={<CreateUser />} />
             <Route path="calendar" element={<Calendar />} />
+            <Route path="settings" element={<Settings />} />
           </Route>
 
           {/* Manager Routes */}
@@ -79,6 +85,7 @@ export default function App() {
             <Route path="analytics" element={<Analytics />} />
             <Route path="funnel" element={<Funnel />} />
             <Route path="clients" element={<Clients />} />
+            <Route path="settings" element={<ManagerSettings />} />
           </Route>
 
           {/* Employee Routes */}

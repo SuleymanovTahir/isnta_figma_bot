@@ -9,8 +9,9 @@ import {
   Settings,
   LogOut,
   UserPlus,
-  TrendingUp,
-  MessageSquare
+  Filter,
+  MessageSquare,
+  CalendarDays
 } from 'lucide-react';
 
 interface AdminLayoutProps {
@@ -26,10 +27,10 @@ export default function AdminLayout({ user }: AdminLayoutProps) {
     { icon: Calendar, label: 'Записи', path: '/admin/bookings' },
     { icon: Users, label: 'Клиенты', path: '/admin/clients' },
     { icon: BarChart3, label: 'Аналитика', path: '/admin/analytics' },
-    { icon: TrendingUp, label: 'Воронка продаж', path: '/admin/funnel' },
+    { icon: Filter, label: 'Воронка продаж', path: '/admin/funnel' },
     { icon: Scissors, label: 'Услуги', path: '/admin/services' },
     { icon: MessageSquare, label: 'Сообщения', path: '/admin/messages' },
-    { icon: Calendar, label: 'Календарь', path: '/admin/calendar' },
+    { icon: CalendarDays, label: 'Календарь', path: '/admin/calendar' },
     { icon: UserPlus, label: 'Пользователи', path: '/admin/users' },
     { icon: Settings, label: 'Настройки', path: '/admin/settings' },
   ];

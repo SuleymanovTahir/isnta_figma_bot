@@ -5,9 +5,10 @@ import {
   Users, 
   BarChart3, 
   MessageSquare,
+  MessageCircle,
   Settings,
   LogOut,
-  TrendingUp
+  Filter
 } from 'lucide-react';
 
 interface ManagerLayoutProps {
@@ -21,10 +22,10 @@ export default function ManagerLayout({ user }: ManagerLayoutProps) {
   const menuItems = [
     { icon: LayoutDashboard, label: 'Панель управления', path: '/manager/dashboard' },
     { icon: MessageSquare, label: 'Сообщения', path: '/manager/messages' },
-    { icon: MessageSquare, label: 'Чат', path: '/manager/chat' },
+    { icon: MessageCircle, label: 'Чат', path: '/manager/chat' },
     { icon: Users, label: 'Клиенты', path: '/manager/clients' },
     { icon: BarChart3, label: 'Аналитика', path: '/manager/analytics' },
-    { icon: TrendingUp, label: 'Воронка продаж', path: '/manager/funnel' },
+    { icon: Filter, label: 'Воронка продаж', path: '/manager/funnel' },
     { icon: Settings, label: 'Настройки', path: '/manager/settings' },
   ];
 
